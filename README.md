@@ -1,5 +1,3 @@
-# imamura2293_python_boot_camp
-
 2 + 2
 
 3 - 8
@@ -409,7 +407,6 @@ $ source env/bin/activate
 (env) $ pip install -r requirements.txt
 Collecting certifi==2017.4.17 (from -r hoge.txt (line 1))
   Using cached certifi-2017.4.17-py2.py3-none-any.whl
-(中略)
 Installing collected packages: certifi, chardet, idna, urllib3, requests
 Successfully installed certifi-2017.4.17 chardet-3.0.4 idna-2.5 requests-2.18.1 urllib3-1.21.1
 (env) $
