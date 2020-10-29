@@ -76,3 +76,64 @@ import.collections.abc
 isinstanve(s1, collection.abc.Sequence)
 
 isinstance(l1, collection.abc.Sequence)
+
+# 3
+
+
+2 + 2
+
+3 - 8
+
+6 * 9
+8 / 2
+5 % 2
+5 ** 2
+
+10 / 3
+10 / 4
+-10 / 4
+
+10 // 3
+10 // 4
+-10 // 4
+
+5.0
+5.0 + 5.2
+10.2 + 8
+
+"Hello,World"
+
+"Hello,World"
+
+print("I\"m Hiroki)
+
+print("Hello\nworld"))
+
+
+print("I'm Hiroki")
+
+"""foo
+    bar
+    baz
+    """
+
+"Mt." + "Fuji"
+
+"spam" * 5
+
+"python"[1]
+
+"python"[:3]
+"python"[4:]
+
+len("pyhon")
+
+"t" in "python"
+
+"k" in "python"
+
+"th" in "python"
+
+"pain-au-chocolate".split("-")
+
+"-".join(["pain", "de", "campagne"])
