@@ -247,3 +247,95 @@ allowed_permissions & requested_permissions
 editor = {'edit', 'comment'}
 reviewer = {'comment', 'approve'}
 editor | reviewer
+
+# 5
+f = open('pycamp.txt', 'w', encoding='utf-8')
+f
+
+f.write("Hello")
+
+f.write(' Python\n')
+
+f.write('こんにちはPython\n')
+
+f.close()
+
+f = open('pycamp.txt', 'r', encoding='utf-8')
+f
+
+txt = f.read()
+print(txt)
+
+f.close()
+
+f = open('pycamp.txt', encoding='utf-8')
+f
+
+with open('pycamp.txt', encoding='utf-8') as f:
+    txt = f.read()
+
+print(txt)
+
+f = open('pycamp.txt', 'a', encoding='utf-8')
+f.write('こんにちは世界\n')
+
+
+def add(a, b):
+    return a + b
+
+
+def sub(a, b):
+    return a - b
+
+
+import calc
+
+calc.add(1, 2)
+
+from calc import add
+
+add(1, 2)
+
+from calc import add, sub
+
+add(1, 2)
+
+sub(2, 1)
+
+from calc import (
+    add,
+    sub,
+)
+
+import datetime
+
+d = datetime.date(2016, 12, 23)
+print(d.year, d.month, d.day)
+
+today = datetime.date.today()
+print(today)
+
+birthday = datetime.date(2008, 12, 3)
+today = datetime.date.today()
+delta = today - birthday
+print(delta.days)
+
+import re
+m = re.search('(P(yth|l)|Z)o[pn]e?', 'Python')
+m
+
+m.group()
+
+
+m = re.search('py(thon)', 'python')
+m.group()
+
+m.group(0)
+
+m.group(1)
+
+re.search('py', 'ruby')
+
+
+
+
