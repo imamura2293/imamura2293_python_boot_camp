@@ -321,11 +321,11 @@ delta = today - birthday
 print(delta.days)
 
 import re
+
 m = re.search('(P(yth|l)|Z)o[pn]e?', 'Python')
 m
 
 m.group()
-
 
 m = re.search('py(thon)', 'python')
 m.group()
@@ -336,6 +336,80 @@ m.group(1)
 
 re.search('py', 'ruby')
 
+$ pip
+install
+requests
 
+
+$ conda
+create - -name
+env
+python
+$ source
+activate
+env
+(env) $ conda
+install
+requests
+(env) $ source
+deactivate
+
+
+$ python3 - m
+venv
+env
+$ ls
+env /
+
+
+
+
+$ source
+env / bin / activate
+(env) $
+
+> env\Scripts\Activate.ps1
+(env) >
+
+(env) $ pip
+install
+requests
+(env) $ python
+import requests
+
+(env) $ deactivate
+$
+$ python
+import requests
+
+Traceback(mostrecentcalllast):
+File
+"<stdin>", line1, in < module >
+ImportError: Nomodulenamedrequests
+
+
+(env)$ pip install requests
+(env) $ pip freeze > requirements.txt
+(env) $ cat requirements.txt
+certifi==2017.4.17
+chardet==3.0.4
+idna==2.5
+requests==2.18.1
+urllib3==1.21.1
+
+
+
+
+$ git clone some-project-source-code
+$ cd some-project
+$ python3 -m venv env  # Windowsの場合は python -m venv env
+$ source env/bin/activate
+(env) $ pip install -r requirements.txt
+Collecting certifi==2017.4.17 (from -r hoge.txt (line 1))
+  Using cached certifi-2017.4.17-py2.py3-none-any.whl
+(中略)
+Installing collected packages: certifi, chardet, idna, urllib3, requests
+Successfully installed certifi-2017.4.17 chardet-3.0.4 idna-2.5 requests-2.18.1 urllib3-1.21.1
+(env) $
 
 
