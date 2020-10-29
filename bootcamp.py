@@ -137,3 +137,113 @@ len("pyhon")
 "pain-au-chocolate".split("-")
 
 "-".join(["pain", "de", "campagne"])
+
+["spam", "egg", 0.5]
+
+['spam'] * 5
+
+['spam', 'ham', 'egg'][0]
+
+['spam', 'ham', 'egg'][1:]
+
+len(['spam', 'ham', 'egg'])
+
+'ham' in ['spam', 'ham', 'egg']
+
+for animal in ["cat", "dog", "snake"]:
+    print(animal)
+
+animals = ["cat", "dog", "snake"]
+animals.append("elepahant")
+animals
+
+ret = []
+for animal in animals:
+    ret.append(len(animal))
+
+    ret
+
+[len(animal) for animal in animals]
+
+dog, cat = ["dog", "cat"]
+dog
+cat
+
+("spam", "ham", 4)
+
+("spam", "ham") + ("egg",)
+("spam",) * 5
+("spam", "ham", "egg")[0]
+("spam", "ham", "egg")[1:]
+
+len(("spam", "ham", "egg"))
+
+"ham" in ("spam", "ham", "egg")
+
+("spam",)
+("spam")
+
+"dog", "cat"
+
+
+def head_splitter(seq):
+    return seq[0], seq[1:]
+
+
+...
+head, tail = head_splitter(['head', 'body', 'tail'])
+head
+
+tail
+
+
+def bad_implementation():
+    return 'username', 'user_password', 'user_id', 'user_permission1', 'user_permission2'
+
+
+user_info = {'user_name': 'taro', 'last_name': 'Yamada'}
+user_info
+
+user_info['user_name']
+user_info['first_name'] = 'Taro'
+user_info
+'user_name' in user_info
+'bio' in user_info
+
+user_info['bio']
+
+user_info.get('user_name')
+bio = user_info.get('bio')
+print(bio)
+
+user_info.get('bio', '')
+
+user_info = {'user_name': 'taro', 'last_name': 'Yamada'}
+for key in user_info:
+    print(key)
+    print(user_info[key])
+
+d = {'foo': 'spam', 'bar': 'ham'}
+for key, value in d.items():
+    print(key, value)
+
+{'spam', 'ham'}
+{'spam', 'spam', 'spam'}
+
+unique_users = {'dog', 'cat'}
+unique_users.add('snake')
+unique_users
+
+len(unique_users)
+unique_users.add('snake')
+unique_users.add('snake')
+unique_users.add('snake')
+len(unique_users)
+
+allowed_permissions = {'edit', 'view'}
+requested_permissions = {'view', 'delete'}
+allowed_permissions & requested_permissions
+
+editor = {'edit', 'comment'}
+reviewer = {'comment', 'approve'}
+editor | reviewer
