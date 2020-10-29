@@ -57,3 +57,22 @@ def fizzbuzz(num):
         print(fizzbuzz(num))
 
 
+n1 = 100
+s1 = "hello"
+l1 = [1, 2, 3]
+type(n1)
+
+type(s1)
+tupe(l1)
+
+isinstance(n1, int)
+
+isinstance(s2, str)
+
+isinstance(li, list)
+
+import.collections.abc
+
+isinstanve(s1, collection.abc.Sequence)
+
+isinstance(l1, collection.abc.Sequence)
